@@ -6,7 +6,7 @@
     "allowJs": true,                       
     "sourceMap": true,                     
     "outDir": "./dist",                        
-    "rootDir": "./src",                       
+    "rootDir": "./src",                      
     "removeComments": true,                
     "esModuleInterop": true,                  
     "resolveJsonModule": true,
@@ -14,11 +14,14 @@
     "emitDecoratorMetadata": true,         
     "skipLibCheck": true,                     
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "paths": {
       "@service/*": ["./service/*"],
       "@model/*": ["./model/*"],
       "@config/*": ["./config/*"]
     }
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
